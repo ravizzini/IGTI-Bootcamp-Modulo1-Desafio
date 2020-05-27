@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Modulo 01</title>
+  </head>
+  <body>
+    <header class="mainHeader">
+      Pesquisa de Usuários da Random User Generator API
+    </header>
+    <div id="contentContainer">
+      <main>
+        <section>
+          <div id="searchInput">
+            <form action="">
+              <label for="busca">Busca</label>
+              <input
+                id="inputWord"
+                type="text"
+                name="busca"
+                placeholder="Informe a palavra ou nome desejado"
+              />
+              <button
+                class="btn waves-effect waves-light"
+                id="searchButton"
+                disabled
+                type="submit"
+                name="action"
+              >
+                Buscar
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
+          </div>
+        </section>
+        <section>
+          <div id="searchResults">
+            <div id="namesList">
+              <div id="namesHeader">
+                <h5>
+                  (<span id="countPeopleResult"></span>) Usuário(s)
+                  Encontrado(s) com a palavra: "<span
+                    id="wordWantedResult"
+                  ></span
+                  >"
+                </h5>
+              </div>
+              <div id="tabPeople">
+                Nomes Cadastrados
+              </div>
+            </div>
+            <div id="statistics">
+              <div id="statisticsHeader">
+                <h5>Estatísticas</h5>
+              </div>
+              <div id="results">
+                <ul>
+                  <li>Sexo Masculino: <span id="countMale"></span></li>
+                  <li>Sexo Feminino: <span id="countFemale"></span></li>
+                  <li>Soma das idades: <span id="agesSum"></span></li>
+                  <li>Média das idades: <span id="agesAverage"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="footer">
+      <footer>Developed by Victor Coelho</footer>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
